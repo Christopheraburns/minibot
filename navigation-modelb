@@ -1,0 +1,13 @@
+forward 6
+########
+# Capture Station #1 (Bruce Lee)
+########
+capture
+forward 6.25
+right 6.5
+########
+# Capture Station #2  (Dublin @ Night)
+########
+capture
+forward 6
+left 4

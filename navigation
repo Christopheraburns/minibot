@@ -1,0 +1,104 @@
+forward 4
+########
+# Capture Station #1 (Bruce Lee)
+########
+capture
+forward 4
+right 6.75
+forward 3.5
+########
+# Capture Station #2  (Dublin @ Night)
+########
+capture
+########
+# Make the First turn
+########
+forward 2.75
+left 4
+forward 1.5
+left 2.90
+########
+# Clear Station 2 for first course correction
+########
+course-correct
+forward 10
+left 5.75
+forward 1
+########
+# Capture Station #3 (Grassy Mountain View)
+########
+capture
+reverse 1
+rev-left 5.75
+forward 4
+right 4.5
+#######
+# Capture Station #4 (Diane Lane)
+#######
+capture
+rev-right 4.5
+forward 5
+course-correct
+forward 15
+left 5.5
+#######
+# Capture Station #5 (Airliner)
+#######
+capture
+rev-left 5.5
+course-correct
+forward 6
+#######
+# Capture Station #6 (horses)
+#######
+capture
+forward 4
+left 5
+forward 1
+left .25
+forward 4
+######
+# Capture Station #7 (Coral Reef)
+######
+capture
+left 2
+forward 4
+left 1
+forward 1.5
+left 3
+######
+# Capture Station #8 (Parrots)
+######
+capture
+forward 3
+left 2
+forward 3.5
+left 3
+forward 1
+left 1
+forward 4
+course-correct
+forward 10
+left 5
+reverse 1
+######
+# Capture Station #9 (Mountain)
+######
+capture
+forward 1
+rev-left 5
+forward 5
+course-correct
+forward 10
+left 5
+######
+# Capture Station #10 (Lena)
+######
+capture
+rev-left 5
+course-correct
+forward 8
+######
+# Capture Station #11 (Silicon Valley)
+######
+capture
