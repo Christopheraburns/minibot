@@ -1,0 +1,863 @@
+{
+	"stations":[
+      {
+        "station_id": 1,
+        "detect_labels": [
+          {
+            "Confidence": 99.1899642944336,
+            "Name": "People"
+          },
+          {
+            "Confidence": 99.18997192382812,
+            "Name": "Person"
+          },
+          {
+            "Confidence": 99.1756820678711,
+            "Name": "Human"
+          }
+        ],
+        "detect_faces": {
+          "Facedetails":[
+            {
+              "Confidence": 99.99658966064453,
+
+              "Eyeglasses": {
+                "Confidence": 99.96907806396484,
+                "Value": false
+              },
+              "EyesOpen": {
+                "Confidence": 99.5998306274414,
+                "Value": true
+              },
+              "Gender": {
+                "Confidence": 99.9292221069336,
+                "Value": "Male"
+              },
+              "MouthOpen": {
+                "Confidence": 99.88261413574219,
+                "Value": false
+              },
+              "Mustache": {
+                "Confidence": 80.35369873046875,
+                "Value": true
+              },
+              "Smile": {
+                "Confidence": 70.09605407714844,
+                "Value": true
+              },
+              "Sunglasses": {
+                "Confidence": 99.83885192871094,
+                "Value": false
+              }
+            }
+          ]
+        },
+        "recognize_celebrity":{
+          "CelebrityFaces":[
+          {
+            "face": {
+              "MatchConfidence": 100,
+              "Name": "Bruce Lee"
+            }
+          }
+        ]},
+        "detect_moderation_labels":{
+            "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 2,
+        "detect_labels": [
+          {
+            "Confidence": 96.04515075683594,
+            "Name": "City"
+          },
+          {
+            "Confidence": 96.04515075683594,
+            "Name": "Downtown"
+          },
+          {
+            "Confidence": 86.13809204101562,
+            "Name": "Metropolis"
+          },
+          {
+            "Confidence": 86.13809204101562,
+            "Name": "Urban"
+          },
+          {
+            "Confidence": 82.09973907470703,
+            "Name": "Building"
+          },
+          {
+            "Confidence": 82.09973907470703,
+            "Name": "Town"
+          },
+          {
+            "Confidence": 78.20240783691406,
+            "Name": "Night"
+          },
+          {
+            "Confidence": 78.20240783691406,
+            "Name": "Outdoors"
+          },
+          {
+            "Confidence": 55.75774383544922,
+            "Name": "Aerial View"
+          },
+          {
+            "Confidence": 55.01951599121094,
+            "Name": "Road"
+          },
+          {
+            "Confidence": 54.72306442260742,
+            "Name": "Street"
+          },
+          {
+            "Confidence": 52.420692443847656,
+            "Name": "Neighborhood"
+          },
+          {
+            "Confidence": 51.882476806640625,
+            "Name": "Office Building"
+          }
+        ],
+        "detect_faces": {
+          "faceDetails":[]
+        },
+        "recognize_celebrity":{
+          "CelebrityFaces":[]
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 3,
+        "detect_labels": [
+          {
+            "Confidence": 93.66592407226562,
+            "Name": "Outdoors"
+          },
+          {
+            "Confidence": 93.66592407226562,
+            "Name": "River"
+          },
+          {
+            "Confidence": 93.66592407226562,
+            "Name": "Water"
+          },
+          {
+            "Confidence": 93.66592407226562,
+            "Name": "Waterfall"
+          },
+          {
+            "Confidence": 59.759857177734375,
+            "Name": "Rock"
+          },
+          {
+            "Confidence": 59.53866958618164,
+            "Name": "Cliff"
+          },
+          {
+            "Confidence": 54.32722473144531,
+            "Name": "Vegetation"
+          },
+          {
+            "Confidence": 54.155677795410156,
+            "Name": "Countryside"
+          },
+          {
+            "Confidence": 52.01712417602539,
+            "Name": "Field"
+          },
+          {
+            "Confidence": 52.01712417602539,
+            "Name": "Grass"
+          },
+          {
+            "Confidence": 51.753719329833984,
+            "Name": "Moss"
+          },
+          {
+            "Confidence": 51.5968132019043,
+            "Name": "Nature"
+          },
+          {
+            "Confidence": 50.53666305541992,
+            "Name": "Landscape"
+          },
+          {
+            "Confidence": 50.53666305541992,
+            "Name": "Scenery"
+          }
+        ],
+        "detect_faces": {
+          "faceDetails":[]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 4,
+        "detect_labels": [
+          {
+			            "Confidence": 99.21192932128906,
+			            "Name": "People"
+			        },
+			        {
+			            "Confidence": 99.21194458007812,
+			            "Name": "Person"
+			        },
+			        {
+			            "Confidence": 99.20005798339844,
+			            "Name": "Human"
+			        },
+			        {
+			            "Confidence": 58.13971710205078,
+			            "Name": "Face"
+			        },
+			        {
+			            "Confidence": 58.13971710205078,
+			            "Name": "Freckle"
+			        },
+			        {
+			            "Confidence": 58.13971710205078,
+			            "Name": "Skin"
+			        },
+			        {
+			            "Confidence": 53.125362396240234,
+			            "Name": "Selfie"
+			        },
+			        {
+			            "Confidence": 52.529727935791016,
+			            "Name": "Female"
+			        },
+			        {
+			            "Confidence": 52.529727935791016,
+			            "Name": "Girl"
+			        },
+			        {
+			            "Confidence": 52.529727935791016,
+			            "Name": "Woman"
+			        },
+			        {
+			            "Confidence": 51.631988525390625,
+			            "Name": "Dimples"
+			        },
+			        {
+			            "Confidence": 51.631988525390625,
+			            "Name": "Smile"
+			        }
+        ],
+        "detect_faces": {
+          "faceDetails":[
+					{
+						"Beard": {
+			                "Confidence": 99.98475646972656,
+			                "Value": false
+			            },
+			             "Eyeglasses": {
+			                "Confidence": 99.96825408935547,
+			                "Value": false
+			            },
+			            "EyesOpen": {
+			                "Confidence": 99.99803161621094,
+			                "Value": true
+			            },
+			            "Gender": {
+			                "Confidence": 100,
+			                "Value": "Female"
+			            },
+			             "MouthOpen": {
+			                "Confidence": 99.89653015136719,
+			                "Value": false
+			            },
+			            "Mustache": {
+			                "Confidence": 99.99404907226562,
+			                "Value": false
+			            },
+			            "Smile": {
+			                "Confidence": 80.70453643798828,
+			                "Value": true
+			            },
+			            "Sunglasses": {
+			                "Confidence": 99.97921752929688,
+			                "Value": false
+			            }
+					}
+				]
+        },
+        "recognize_celebrity":{
+          "CelebrityFaces":[
+					{
+						"Face":{
+							"Confidence": 99.99658966064453
+						},
+						"MatchConfidence":100,
+						"Name": "Diane Lane"
+					}
+				]
+
+          },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 5,
+        "detect_labels": [
+          {
+            "Confidence": 99.12574005126953,
+            "Name": "Aircraft"
+          },
+          {
+            "Confidence": 99.12574005126953,
+            "Name": "Airplane"
+          },
+          {
+            "Confidence": 97.20550537109375,
+            "Name": "Airliner"
+          },
+          {
+            "Confidence": 97.20550537109375,
+            "Name": "Flight"
+          },
+          {
+            "Confidence": 97.20550537109375,
+            "Name": "Jet"
+          }
+        ],
+        "detect_faces": {
+          "faceDetails":[]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 6,
+        "detect_labels": [
+          {
+            "Confidence": 97.90752410888672,
+            "Name": "Animal"
+          },
+          {
+            "Confidence": 97.90752410888672,
+            "Name": "Horse"
+          },
+          {
+            "Confidence": 97.90752410888672,
+            "Name": "Mammal"
+          },
+          {
+            "Confidence": 96.75942993164062,
+            "Name": "Colt Horse"
+          },
+          {
+            "Confidence": 96.75942993164062,
+            "Name": "Foal"
+          },
+          {
+            "Confidence": 61.51111602783203,
+            "Name": "Plant"
+          },
+          {
+            "Confidence": 61.51111602783203,
+            "Name": "Vegetation"
+          },
+          {
+            "Confidence": 52.20051956176758,
+            "Name": "Countryside"
+          },
+          {
+            "Confidence": 52.20051956176758,
+            "Name": "Outdoors"
+          }
+        ],
+        "detect_faces": {
+          "faceDetails":[]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 7,
+        "detect_labels": [
+          {
+            "Confidence": 98.99515533447266,
+            "Name": "Aquarium"
+          },
+          {
+            "Confidence": 98.99515533447266,
+            "Name": "Aquatic"
+          },
+          {
+            "Confidence": 98.99515533447266,
+            "Name": "Sea Life"
+          },
+          {
+            "Confidence": 98.99515533447266,
+            "Name": "Water"
+          },
+          {
+            "Confidence": 89.9840316772461,
+            "Name": "Coral Reef"
+          },
+          {
+            "Confidence": 89.9840316772461,
+            "Name": "Reef"
+          },
+          {
+            "Confidence": 89.9840316772461,
+            "Name": "Sea"
+          }
+        ],
+        "detect_faces": {
+            "faceDetails":[]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 8,
+        "detect_labels": [
+          {
+            "Confidence": 98.69742584228516,
+            "Name": "Bird"
+          },
+          {
+            "Confidence": 98.69742584228516,
+            "Name": "Parrot"
+          },
+          {
+            "Confidence": 82.09862518310547,
+            "Name": "Parakeet"
+          },
+          {
+            "Confidence": 65.54022216796875,
+            "Name": "Macaw"
+          },
+          {
+            "Confidence": 64.63692474365234,
+            "Name": "Beak"
+          }
+        ],
+        "detect_faces": {
+          "faceDetails":[]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 9,
+        "detect_labels": [
+          {
+            "Confidence": 98.11351776123047,
+            "Name": "Crest"
+          },
+          {
+            "Confidence": 98.11351776123047,
+            "Name": "Mountain"
+          },
+          {
+            "Confidence": 98.11351776123047,
+            "Name": "Mountain Range"
+          },
+          {
+            "Confidence": 98.11351776123047,
+            "Name": "Outdoors"
+          },
+          {
+            "Confidence": 98.11351776123047,
+            "Name": "Peak"
+          },
+          {
+            "Confidence": 52.73383712768555,
+            "Name": "Ice"
+          },
+          {
+            "Confidence": 52.73383712768555,
+            "Name": "Snow"
+          }
+        ],
+        "detect_faces": {
+           "faceDetails":[]
+        },
+        "recognize_celebrity": {
+           "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 10,
+        "detect_labels": [
+          {
+            "Confidence": 99.24433898925781,
+            "Name": "People"
+          },
+          {
+            "Confidence": 99.24434661865234,
+            "Name": "Person"
+          },
+          {
+            "Confidence": 99.23590087890625,
+            "Name": "Human"
+          },
+          {
+            "Confidence": 60.93776321411133,
+            "Name": "Female"
+          },
+          {
+            "Confidence": 60.93776321411133,
+            "Name": "Girl"
+          },
+          {
+            "Confidence": 60.93776321411133,
+            "Name": "Woman"
+          },
+          {
+            "Confidence": 51.55194854736328,
+            "Name": "Face"
+          }
+        ],
+        "detect_faces": {
+          "FaceDetails": [
+            {
+              "Beard": {
+                "Confidence": 99.97818756103516,
+                "Value": false
+              },
+              "MouthOpen": {
+                "Confidence": 99.5626449584961,
+                "Value": false
+              },
+              "Mustache": {
+                "Confidence": 99.97996520996094,
+                "Value": false
+              },
+              "Smile": {
+                "Confidence": 79.2741928100586,
+                "Value": true
+              },
+              "Sunglasses": {
+                "Confidence": 98.15420532226562,
+                "Value": false
+              }
+            }
+          ]
+        },
+        "recognize_celebrity": {
+          "CelebrityFaces": []
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      },
+      {
+        "station_id": 11,
+        "detect_labels": [
+          {
+            "Confidence": 99.12088775634766,
+            "Name": "People"
+          },
+          {
+            "Confidence": 99.12090301513672,
+            "Name": "Person"
+          },
+          {
+            "Confidence": 99.09868621826172,
+            "Name": "Human"
+          },
+          {
+            "Confidence": 81.71174621582031,
+            "Name": "Face"
+          },
+          {
+            "Confidence": 81.71174621582031,
+            "Name": "Portrait"
+          },
+          {
+            "Confidence": 81.71174621582031,
+            "Name": "Smile"
+          },
+          {
+            "Confidence": 71.07408142089844,
+            "Name": "Man"
+          },
+          {
+            "Confidence": 56.19035339355469,
+            "Name": "Crowd"
+          },
+          {
+            "Confidence": 54.1724853515625,
+            "Name": "Beard"
+          },
+          {
+            "Confidence": 54.1724853515625,
+            "Name": "Hair"
+          }
+        ],
+        "detect_faces": {
+          "FaceDetails": [
+            {
+              "Beard": {
+                "Confidence": 99.2411117553711,
+                "Value": false
+              },
+              "Eyeglasses":
+              {
+                "Confidence": 99.98725891113281,
+                "Value": false
+              },
+              "EyesOpen":
+              {
+                "Confidence": 99.99882507324219,
+                "Value": true
+              },
+              "Gender":
+              {
+                "Confidence": 99.92913818359375,
+                "Value": "Male"
+              },
+              "MouthOpen":
+              {
+                "Confidence": 99.82502746582031,
+                "Value": false
+              },
+              "Mustache":
+              {
+                "Confidence": 98.14908599853516,
+                "Value": false
+              },
+              "Smile":
+              {
+                "Confidence": 93.99520111083984,
+                "Value": false
+              },
+              "Sunglasses":
+              {
+                "Confidence": 99.92803192138672,
+                "Value": false }
+            },
+            {
+              "Beard":
+              {
+                "Confidence": 99.999755859375,
+                "Value": true
+              },
+              "Eyeglasses":
+              {
+                "Confidence": 99.99984741210938,
+                "Value": false
+              },
+              "EyesOpen":
+              {
+                "Confidence": 91.25885009765625,
+                "Value": true
+              },
+              "Gender":
+              {
+                "Confidence": 99.92923736572266,
+                "Value": "Male"
+              },
+              "MouthOpen":
+              {
+                "Confidence": 88.23897552490234,
+                "Value": false
+              },
+              "Mustache":
+              {
+                "Confidence": 99.99993133544922,
+                "Value": true
+              },
+              "Smile":
+              {
+                "Confidence": 96.38715362548828,
+                "Value": false
+              },
+              "Sunglasses":
+              {
+                "Confidence": 99.93660736083984,
+                "Value": false
+              }
+            },
+            {
+              "Beard":
+              {
+                "Confidence": 87.4664077758789,
+                "Value": false
+              },
+              "Eyeglasses":
+              {
+                "Confidence": 99.978515625,
+                "Value": false
+              },
+              "EyesOpen":
+              {
+                "Confidence": 99.8101806640625,
+                "Value": true
+              },
+              "Gender":
+              {
+                "Confidence": 99.9211654663086,
+                "Value": "Male"
+              },
+              "MouthOpen":
+              {
+                "Confidence": 99.47793579101562,
+                "Value": false
+              },
+              "Mustache":
+              {
+                "Confidence": 89.81964111328125,
+                "Value": false
+              },
+              "Smile":
+              {
+                "Confidence": 70.03886413574219,
+                "Value": false
+              },
+              "Sunglasses":
+              {
+                "Confidence": 99.69105529785156,
+                "Value": false
+              }
+            },
+            {
+              "Beard":
+              {
+                "Confidence": 90.79917907714844,
+                "Value": false
+              },
+              "Eyeglasses":
+              {
+                "Confidence": 99.62274169921875,
+                "Value": false
+              },
+              "EyesOpen":
+              {
+                "Confidence": 99.99820709228516,
+                "Value": true
+              },
+              "Gender":
+              {
+                "Confidence": 99.91500091552734,
+                "Value": "Male"
+              },
+              "MouthOpen":
+              {
+                "Confidence": 99.94005584716797,
+                "Value": false
+              },
+              "Mustache":
+              {
+                "Confidence": 78.88067626953125,
+                "Value": true
+              },
+              "Smile":
+              {
+                "Confidence": 99.81321716308594,
+                "Value": false
+              },
+              "Sunglasses":
+              {
+                "Confidence": 99.91309356689453,
+                "Value": false
+              }
+            },
+            {
+              "Beard":
+              {
+                "Confidence": 99.99903106689453,
+                "Value": true
+              },
+              "Eyeglasses":
+              {
+                "Confidence": 99.9770736694336,
+                "Value": true
+              },
+              "EyesOpen":
+              {
+                "Confidence": 97.10502624511719,
+                "Value": false
+              },
+              "Gender":
+              {
+                "Confidence": 99.92697143554688,
+                "Value": "Male"
+              },
+              "MouthOpen":
+              {
+                "Confidence": 99.37783813476562,
+                "Value": false
+              },
+              "Mustache":
+              {
+                "Confidence": 99.98828887939453,
+                "Value": true
+              },
+              "Smile":
+              {
+                "Confidence": 98.93408966064453,
+                "Value": true
+              },
+              "Sunglasses":
+              {
+                "Confidence": 99.83594512939453,
+                "Value": false
+              }
+            }
+          ]
+        },
+        "recognize_celebrity": {
+            "CelebrityFaces": [ {
+                "face":
+                {
+                  "MatchConfidence": 100,
+                  "Name": "Thomas Middleditch"
+                },
+                "face":
+                {
+                  "MatchConfidence": 100,
+                  "Name": "Zach Woods"
+                },
+                "face":
+                {
+                  "MatchConfidence": 89,
+                  "Name": "Kumail Nanjiani"
+                },
+                "face":
+                {
+                  "MatchConfidence": 55,
+                  "Name": "Martin Starr"
+                }
+              }
+            ]
+        },
+        "detect_moderation_labels":{
+           "ModerationLabels":[]
+        }
+      }
+	]
+}

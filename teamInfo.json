@@ -1,0 +1,1239 @@
+{
+    "teams":[
+        {
+            "teamid": 1,
+            "picks": [
+                {
+                    "stationId": 1,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 2,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 3,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 4,
+                    "confidence": "80",
+                    "apis":[
+                       {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 5,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 6,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 7,
+                    "confidence": "55",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 8,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 9,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 10,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 11,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamid": 2,
+            "picks": [
+                {
+                    "stationId": 1,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 2,
+                    "confidence": "85",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 3,
+                    "confidence": "85",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 4,
+                    "confidence": "100",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 5,
+                    "confidence": "86",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 6,
+                    "confidence": "97.5",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 7,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 8,
+                    "confidence": "95",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 9,
+                    "confidence": "80",
+                    "apis":[
+                       {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 10,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 11,
+                    "confidence": "97",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamid": 3,
+            "picks": [
+                {
+                    "stationId": 1,
+                    "confidence": "62",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 2,
+                    "confidence": "54.6",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 3,
+                    "confidence": "75",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 4,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 5,
+                    "confidence": "88",
+                    "apis":[
+                       {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 6,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 7,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 8,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 9,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 10,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 11,
+                    "confidence": "99",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamid": 4,
+            "picks": [
+                {
+                    "stationId": 1,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 2,
+                    "confidence": "50",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 3,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 4,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 5,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 6,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 7,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 8,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 9,
+                    "confidence": "60",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 10,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 11,
+                    "confidence": "70",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "teamid": 5,
+            "picks": [
+                {
+                    "stationId": 1,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 2,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 3,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 4,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 5,
+                    "confidence": "90",
+                    "apis":[
+                       {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 6,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 7,
+                    "confidence": "80",
+                    "apis":[
+                       {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 8,
+                    "confidence": "80",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 9,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 10,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "True"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "stationId": 11,
+                    "confidence": "90",
+                    "apis":[
+                        {
+                            "name": "detect_labels",
+                            "value": "False"
+                        },
+                        {
+                            "name": "detect_faces",
+                            "value": "False"
+                        },
+                        {
+                            "name": "recognize_celebrity",
+                            "value": "True"
+                        },
+                        {
+                            "name": "detect_moderation_labels",
+                            "value": "False"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

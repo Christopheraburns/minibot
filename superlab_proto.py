@@ -10,8 +10,6 @@ import os.path
 from courseCorrector import calcErr
 from boto3 import Session
 from botocore.exceptions import BotoCoreError, ClientError
-import io
-import os
 
 class ScoreBoard:
     teams = []
@@ -168,47 +166,33 @@ def loadTeams():
 
 
 # Call this routine ONCE for each station
-def StationScoring(image_path, stationid=0, debug=False):
+def StationScoring(image_path, stationid=0):
     global scoreboard
-
     for station in master_data["stations"]:
-        if debug:
-            print("PiBot is at Station # {}".format(station["station_id"]))
+        #print(station["station_id"])
         if station["station_id"] == stationid:
             station_json = station
 
     #load the image file
-    if debug:
-        print("Opening the image file: {}".format(image_path))
+    #with open('./master_images/station1.jpg', "rb")as imagefile:
     with open(image_path, "rb")as imagefile:
         bytes = imagefile.read()
 
     #Call all 4 Reko APIs
 
-    if debug:
-        print("Calling FOUR Reko APIs")
     #API #1 Detect_Labels
     detect_labels_response = rekognition.detect_labels(Image={'Bytes': bytes})
-    if debug:
-        print("Detect_Labels API called and returned: {}".format(detect_labels_response))
     #API #2 Detect_faces
     detect_faces_response = rekognition.detect_faces(Image={'Bytes': bytes})
-    if debug:
-        print("Detect_Faces API called and returned: {}".format(detect_faces_response))
     #API #3 detect_moderationlabels
     moderation_response = rekognition.detect_moderation_labels(Image={'Bytes': bytes})
-    if debug:
-        print("Moderation_response API called and returned: {}".format(moderation_response))
     #API #4 recognize_celebrities":
     celebrity_response = rekognition.recognize_celebrities(Image={'Bytes': bytes})
-    if debug:
-        print("celebrity_response API called and returned: {}".format(celebrity_response))
 
     #Now that we have all the API calls - compare what the team predicted agains the master
+
     for team in TeamInfo:
         team_cl = team.scenes[stationid-1].picks.confidence_level
-        if debug:
-            print("Calculating score for team: {} at confidence level {}".format(team.team_id, team_cl))
 
         #True Positives
 
@@ -304,8 +288,6 @@ def StartingScores():
         scoreboard.teams[i].starting_score = -pointsCharged
         scoreboard.teams[i].current_score = scoreboard.teams[i].starting_score
         print("Team # {} will be charged {} points to begin the challenge".format(scoreboard.teams[i].team_id, scoreboard.teams[i].starting_score))
-
-
 
 def leftwheel(dur, direction='forward'):
     global allStop
@@ -560,116 +542,96 @@ def clearCaptures():
         os.remove('./captures/' + file)
 
 # Call this routine ONCE for each station
-def StationScoring(image_path, stationid=0, debug=True):
+def StationScoring(image_path, stationid=0):
     global scoreboard
-    print("PiBot is checking in at station: {}".format(stationid))
-    try:
-        station_found = False
-        for station in master_data["stations"]:
-            if int(station["station_id"]) == int(stationid):
-                station_json = station
-                station_found = True
-                if debug:
-                    print("calculating score for station # {}".format(station["station_id"]))
+    for station in master_data["stations"]:
+        #print(station["station_id"])
+        if station["station_id"] == stationid:
+            station_json = station
 
-        if not station_found:
-            raise LookupError("Unable to match station_id")
+    #load the image file
+    #with open('./master_images/station1.jpg', "rb")as imagefile:
+    with open(image_path, "rb")as imagefile:
+        bytes = imagefile.read()
 
-        #load the image file
-        if debug:
-            print("Reading imagefile: {}".format(image_path))
-        with open(image_path, "rb")as imagefile:
-            bytes = imagefile.read()
+    #Call all 4 Reko APIs
 
-        #Call all 4 Reko APIs
+    #API #1 Detect_Labels
+    detect_labels_response = rekognition.detect_labels(Image={'Bytes': bytes})
+    #API #2 Detect_faces
+    detect_faces_response = rekognition.detect_faces(Image={'Bytes': bytes})
+    #API #3 detect_moderationlabels
+    moderation_response = rekognition.detect_moderation_labels(Image={'Bytes': bytes})
+    #API #4 recognize_celebrities":
+    celebrity_response = rekognition.recognize_celebrities(Image={'Bytes': bytes})
 
-        #API #1 Detect_Labels
-        detect_labels_response = rekognition.detect_labels(Image={'Bytes': bytes})
-        if debug:
-            print("calling Detect_Labels API.")
-        #API #2 Detect_faces
-        detect_faces_response = rekognition.detect_faces(Image={'Bytes': bytes})
-        if debug:
-            print("calling Detect_Faces API.")
-        #API #3 detect_moderationlabels
-        moderation_response = rekognition.detect_moderation_labels(Image={'Bytes': bytes})
-        if debug:
-            print("calling moderation_response API.")
-        #API #4 recognize_celebrities":
-        celebrity_response = rekognition.recognize_celebrities(Image={'Bytes': bytes})
-        if debug:
-            print("calling celebrity_response API.")
+    #Now that we have all the API calls - compare what the team predicted agains the master
 
-        #Now that we have all the API calls - compare what the team predicted agains the master
+    for team in TeamInfo:
+        team_cl = team.scenes[stationid-1].picks.confidence_level
 
-        for team in TeamInfo:
-            team_cl = team.scenes[int(stationid)-1].picks.confidence_level
-            if debug:
-                print("Calculating score for team {} at station {} with confidence level {}".format(team.team_id, stationid, team_cl))
-            #True Positives
+        #True Positives
 
-            #did the team choose detect_labels API on this scene?
-            #if yes, does the response with the Team's confidence level applied match the master response
+        #did the team choose detect_labels API on this scene?
+        #if yes, does the response with the Team's confidence level applied match the master response
 
-            # Detect Labels
-            if team.scenes[int(stationid)-1].picks.apiToCall[0] == 1:
-                print("Team # {} chose to call the detect_labels API against Station # {}".format(team.team_id, stationid))
-                # What is the confidence level the team chose
+        # Detect Labels
+        if team.scenes[stationid-1].picks.apiToCall[0] == 1:
+            print("Team # {} chose to call the detect_labels API against Station # {}".format(team.team_id, stationid))
+            # What is the confidence level the team chose
 
-                # take only the detect labels responses that are equal to or GREATER than the team_cl
-                detect_label_hits = []
-                for detect_label in detect_labels_response["Labels"]:
-                    if detect_label["Confidence"] >= float(team_cl):
-                        # verify that this label is in the MasterFile
-                        hit = False
-                        for verify_detect_label in station_json["detect_labels"]:
-                            if verify_detect_label["Name"] == detect_label["Name"]:
-                                hit = True
-                        if hit:
-                            detect_label_hits.append(detect_label)
-                            event = "Team # {} correctly matched a detect_labels object {} at Station # {} +1 point".format(team.team_id, detect_label["Name"], stationid)
-                            print(event)
-                            scoreboard.teams[team.team_id].current_score = scoreboard.teams[team.team_id].current_score + 1
-                            scoreboard.history.append(event)
-
-
-            # Detect Faces
-            if team.scenes[int(stationid)-1].picks.apiToCall[1] == 1:
-                print("Team # {} chose to call the detect_faces API against Station # {}".format(team.team_id, stationid))
-
-                detect_faces_hits = []
-                for detect_face_label in detect_faces_response["FaceDetails"]:
-                    if detect_face_label["Confidence"] >= float(team_cl):
-                        detect_faces_hits.append(detect_face_label)
-                        event = "Team # {} correctly detected a face at Station # {} +1 point".format(team.team_id, stationid)
+            # take only the detect labels responses that are equal to or GREATER than the team_cl
+            detect_label_hits = []
+            for detect_label in detect_labels_response["Labels"]:
+                if detect_label["Confidence"] >= float(team_cl):
+                    # verify that this label is in the MasterFile
+                    hit = False
+                    for verify_detect_label in station_json["detect_labels"]:
+                        if verify_detect_label["Name"] == detect_label["Name"]:
+                            hit = True
+                    if hit:
+                        detect_label_hits.append(detect_label)
+                        event = "Team # {} correctly matched a detect_labels object {} at Station # {} +1 point".format(team.team_id, detect_label["Name"], stationid)
                         print(event)
                         scoreboard.teams[team.team_id].current_score = scoreboard.teams[team.team_id].current_score + 1
                         scoreboard.history.append(event)
 
 
-            # Detect_moderationlabels
-            if team.scenes[int(stationid)-1].picks.apiToCall[2] == 1:
-                print("Team # {} chose to call the moderation_labels API against Station # {}".format(team.team_id, stationid))
+        # Detect Faces
+        if team.scenes[stationid-1].picks.apiToCall[1] == 1:
+            print("Team # {} chose to call the detect_faces API against Station # {}".format(team.team_id, stationid))
 
-                moderation_hits = []
-                #TODO
-                #There are no moderation hits - come back to this code later
+            detect_faces_hits = []
+            for detect_face_label in detect_faces_response["FaceDetails"]:
+                if detect_face_label["Confidence"] >= float(team_cl):
+                    detect_faces_hits.append(detect_face_label)
+                    event = "Team # {} correctly detected a face at Station # {} +1 point".format(team.team_id, stationid)
+                    print(event)
+                    scoreboard.teams[team.team_id].current_score = scoreboard.teams[team.team_id].current_score + 1
+                    scoreboard.history.append(event)
 
-            # recognize_celebrities
-            if team.scenes[int(stationid)-1].picks.apiToCall[3] == 1:
-                print("Team # {} chose to call the recognize_celebrities API against Station # {}".format(team.team_id, stationid))
 
-                celebrity_hits = []
-                if len(celebrity_response["CelebrityFaces"]) > 0:
-                    for celebrity in celebrity_response["CelebrityFaces"]:
-                        if celebrity["MatchConfidence"] >= float(team_cl):
-                            celebrity_hits.append(celebrity)
-                            event = "Team # {} correctly detected a Celebrity {} at Station {}  +1 point".format(team.team_id, celebrity["Name"], stationid)
-                            print(event)
-                            scoreboard.teams[team.team_id].current_score = scoreboard.teams[team.team_id].current_score + 1
-                            scoreboard.history.append(event)
-    except Exception as e:
-        print("An error occured while calculating scores: {}".format(e))
+        # Detect_moderationlabels
+        if team.scenes[stationid-1].picks.apiToCall[2] == 1:
+            print("Team # {} chose to call the moderation_labels API against Station # {}".format(team.team_id, stationid))
+
+            moderation_hits = []
+            #TODO
+            #There are no moderation hits - come back to this code later
+
+        # recognize_celebrities
+        if team.scenes[stationid-1].picks.apiToCall[3] == 1:
+            print("Team # {} chose to call the recognize_celebrities API against Station # {}".format(team.team_id, stationid))
+
+            celebrity_hits = []
+            if len(celebrity_response["CelebrityFaces"]) > 0:
+                for celebrity in celebrity_response["CelebrityFaces"]:
+                    if celebrity["MatchConfidence"] >= float(team_cl):
+                        celebrity_hits.append(celebrity)
+                        event = "Team # {} correctly detected a Celebrity {} at Station {}  +1 point".format(team.team_id, celebrity["Name"], stationid)
+                        print(event)
+                        scoreboard.teams[team.team_id].current_score = scoreboard.teams[team.team_id].current_score + 1
+                        scoreboard.history.append(event)
 
 def captureImage():
     global retryCapture
@@ -697,7 +659,6 @@ def captureImage():
         incr = getImageNum()
         cv2.imwrite('./captures/capture' + incr + '.png', frame)
 
-        print("Calculate station scores...")
         StationScoring(image_path='./captures/capture' + incr + '.png', stationid=incr)
 
         #print("Scene #: {}".format(incr))
@@ -785,7 +746,6 @@ def courseCorrection(debug=False, saveImages=False):
 
 def navControl(modelB):
     global allStop
-    global TeamInfo
     # Read the nav control document
     if modelB == True:
         print("loading Model-B navigation")
@@ -840,10 +800,6 @@ def navControl(modelB):
                     action = command.split(" ")
                     rightwheel(float(action[1]))
         x+=1
-    #Print scoreboard
-    for i in range(len(TeamInfo)):
-        print("Team # {} finishes with {} points".format(scoreboard.teams[i].team_id, scoreboard.teams[i].current_score))
-
 
 
 def argsverified(args):
